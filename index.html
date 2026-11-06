@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoX - 3D World Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+    </div>
+
+    <header>
+        <div class="logo">CHRONO<span>X</span></div>
+        <button id="themeToggle">☀️ Light Mode</button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="subtitle">YOUR TIME. YOUR WORLD.</p>
+            <h1>Time Beyond <span>Limits.</span></h1>
+            <p class="description">Experience time in another dimension.</p>
+        </section>
+
+        <section class="main-clock">
+            <div class="clock-label">LOCAL TIME</div>
+
+            <div class="clock-display">
+                <div class="time-box" id="hours">00</div>
+                <span class="colon">:</span>
+                <div class="time-box" id="minutes">00</div>
+                <span class="colon">:</span>
+                <div class="time-box" id="seconds">00</div>
+            </div>
+
+            <div class="ampm" id="ampm">AM</div>
+
+            <div class="date" id="date">Loading date...</div>
+            <div class="timezone">INDIAN STANDARD TIME · IST</div>
+        </section>
+
+        <section class="world-section">
+            <div class="section-heading">
+                <div>
+                    <p class="subtitle">GLOBAL TIME ZONES</p>
+                    <h2>World Clock</h2>
+                </div>
+                <span class="live-badge">● LIVE</span>
+            </div>
+
+            <div class="world-grid">
+
+                <div class="world-card">
+                    <span class="city-icon">🗽</span>
+                    <h3>New York</h3>
+                    <p>United States</p>
+                    <div class="world-time" id="newyork">--:--:--</div>
+                    <span class="world-zone">EST / EDT</span>
+                </div>
+
+                <div class="world-card">
+                    <span class="city-icon">🇬🇧</span>
+                    <h3>London</h3>
+                    <p>United Kingdom</p>
+                    <div class="world-time" id="london">--:--:--</div>
+                    <span class="world-zone">GMT / BST</span>
+                </div>
+
+                <div class="world-card">
+                    <span class="city-icon">🗼</span>
+                    <h3>Tokyo</h3>
+                    <p>Japan</p>
+                    <div class="world-time" id="tokyo">--:--:--</div>
+                    <span class="world-zone">JST</span>
+                </div>
+
+                <div class="world-card">
+                    <span class="city-icon">🕌</span>
+                    <h3>Dubai</h3>
+                    <p>United Arab Emirates</p>
+                    <div class="world-time" id="dubai">--:--:--</div>
+                    <span class="world-zone">GST</span>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        Designed with JavaScript | CHRONOX © 2026
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
